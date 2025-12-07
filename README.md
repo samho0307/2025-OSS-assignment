@@ -33,3 +33,18 @@
 | `git switch [이름]` | 해당 브랜치로 이동 (구 `checkout`) |
 | `git merge [이름]` | 현재 브랜치에 다른 브랜치의 내용을 병합 |
 | `git branch -d [이름]` | 작업이 끝난 브랜치 삭제 |
+
+### 📦 3. 변경사항 저장 및 업로드 (Save & Upload)
+| 명령어 | 설명 |
+| --- | --- |
+| `git add .` | 변경된 모든 파일을 스테이징 영역(Stage)에 올림 |
+| `git commit -m "메시지"` | 스테이징된 파일들을 버전으로 확정(저장) |
+| `git push origin main` | 원격 저장소(GitHub)로 내 커밋 내역 업로드 |
+| `git pull origin main` | 원격 저장소의 최신 내용을 가져와 합침 |
+| `git clone [URL]` | 원격 저장소를 내 컴퓨터로 통째로 복제 |
+
+### ↩️ 4. 되돌리기 (Undo & Reset)
+실수했을 때 유용한 명령어입니다.
+
+- `git restore [파일명]`: 작업 중인 파일의 변경 사항을 폐기(마지막 커밋 상태로 복구)
+- `git reset HEAD^`: 방금 한 커밋을 취소하고 파일 변경 사항은 남김 (Soft Reset)
